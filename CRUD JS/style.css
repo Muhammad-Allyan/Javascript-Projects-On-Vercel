@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+ .container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+ul#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#task-list li {
+  background-color: #f9fafb;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text {
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions i {
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.actions i:hover {
+  color: #111827;
+}
+
+ #task-list {
+  list-style: none;
+  padding: 0;
+  max-height: 300px; /* Limit the visible height */
+  overflow-y: auto;  /*Add scroll only to the task list */
+} 
+/* .completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section input,
+  .input-section button {
+    width: 100%;
+  }
+} */
